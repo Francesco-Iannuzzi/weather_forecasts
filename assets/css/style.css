@@ -1,11 +1,12 @@
 /* #region utilities */
 
 :root {
-    --app-back: linear-gradient(to bottom, #7FDBFF, #ebebeb);
+    --app-back: linear-gradient(to bottom, #7FDBFF, #f5f5f5);
     --app-back-1: #7FDBFF;
-    --app-back-2: #ebebeb;
-    --app-primary: #191970;
+    --app-back-2: #f5f5f5;
+    --app-primary: #f9f9f9;
     --app-secondary: #FFDC00;
+    --app-text: #4242db;
     --app-icon: #FFA500;
 
     /* color weather */
@@ -27,28 +28,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
+
 }
 
 body {
     background: var(--app-back);
+    background-repeat: no-repeat;
     height: 100vh;
 }
 
 .panel {
     background-color: var(--app-primary);
     border-radius: 2rem;
-    /* padding: 2rem;
-    box-shadow: 5px 10px 8px #888888;
-    max-width: 45rem; */
+    padding: 2rem;
+    box-shadow: 5px 10px 8px #adadad;
+    max-width: 60rem;
+    margin: auto;
 }
 
 /* #endregion commons */
 
 /* #region app_header */
+
+#app_header>.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.title {
+    color: var(--app-text);
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 5rem;
+}
+
 /* #endregion app_header */
 
 /* #region app_main */
