@@ -1,0 +1,55 @@
+/* #region utilities */
+
+:root {
+    --app-back: linear-gradient(to bottom, #7FDBFF, #ebebeb);
+    --app-back-1: #7FDBFF;
+    --app-back-2: #ebebeb;
+    --app-primary: #191970;
+    --app-secondary: #FFDC00;
+    --app-icon: #FFA500;
+
+    /* color weather */
+    --app-sun: #FFD700;
+    --app-clear: #87CEEB;
+    --app-clouds: #CCCCCC;
+    --app-fog: #D3D3D3;
+    --app-rain: #4682B4;
+    --app-lightning: #FFA500;
+    --app-storm: #2F4F4F;
+    --app-snow: #FFFFFF;
+}
+
+/* #endregion utilities */
+
+/* #region commons */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    background: var(--app-back);
+    height: 100vh;
+}
+
+.panel {
+    background-color: var(--app-primary);
+    border-radius: 2rem;
+    /* padding: 2rem;
+    box-shadow: 5px 10px 8px #888888;
+    max-width: 45rem; */
+}
+
+/* #endregion commons */
+
+/* #region app_header */
+/* #endregion app_header */
+
+/* #region app_main */
+/* #endregion app_main */
