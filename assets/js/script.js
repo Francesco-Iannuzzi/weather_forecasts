@@ -6,6 +6,9 @@ const weatherDegreesElement = document.querySelector('.weather_degrees');
 const adviceTextElement = document.querySelector('.advise_text');
 
 
+// recover latitude and longitude
+navigator.geolocation.getCurrentPosition(onSucces, onError);
+
 
 // the error of recover latitude and longitude
 function onError() {
@@ -21,6 +24,7 @@ function onError() {
     bodyElement.classList.remove('js_loading');
 
 };
+
 
 // the succes of recover latitude and longitude
 function onSucces(position) {
@@ -42,22 +46,29 @@ function onSucces(position) {
 
         console.log(jsonData);
 
+        const imagesCode = jsonData.weather[0].icon;
+        const temperature = jsonData.main.temp;
+
         // show geolocation content
         weatherCityElement.innerText = jsonData.name;
-        weatherImagesElement.src = `./assets/img/${jsonData.weather[0].icon}.png`;
-        weatherDegreesElement.innerText = Math.floor(jsonData.main.temp);
+        weatherImagesElement.src = `./assets/img/${imagesCode}.png`;
+        weatherDegreesElement.innerText = Math.floor(temperature);
         weatherImagesElement.alt = 'icon weather';
+        adviceTextElement.innerText = getAdvices(imagesCode);
+
 
         // js_loading stop
         bodyElement.classList.remove('js_loading');
 
     };
 
+
+    // function to gave an advice
+    function getAdvices(imagesCode) {
+        return advice = advices[imagesCode]
+    }
+
     // invok getWeather function
     getWeather();
 
 };
-
-
-// recover latitude and longitude
-navigator.geolocation.getCurrentPosition(onSucces, onError);
