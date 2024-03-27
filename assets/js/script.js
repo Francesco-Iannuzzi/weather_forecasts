@@ -16,7 +16,7 @@ function onError() {
     // show geolocation disabled content and suggest to active geolocation
     weatherCityElement.innerText = 'Geolocation disabled';
     weatherImagesElement.src = './assets/img/geolocation_disabled.png';
-    weatherDegreesElement.innerText = '...';
+    weatherDegreesElement.innerText = '';
     weatherImagesElement.alt = 'Geolocation disabled image';
     adviceTextElement.innerText = 'Please active Geolocation';
 
@@ -52,7 +52,7 @@ function onSucces(position) {
         // show geolocation content
         weatherCityElement.innerText = jsonData.name;
         weatherImagesElement.src = `./assets/img/${imagesCode}.png`;
-        weatherDegreesElement.innerText = Math.floor(temperature);
+        weatherDegreesElement.innerText = `${Math.floor(temperature)}°`;
         weatherImagesElement.alt = 'icon weather';
         adviceTextElement.innerText = getAdvices(imagesCode);
 
@@ -65,7 +65,7 @@ function onSucces(position) {
 
     // function to gave an advice
     function getAdvices(imagesCode) {
-        return advice = advices[imagesCode]
+        return advices[imagesCode];
     }
 
     // invok getWeather function
