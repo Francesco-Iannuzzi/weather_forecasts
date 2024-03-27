@@ -28,7 +28,6 @@
 }
 
 
-
 /* #endregion utilities */
 
 /* #region commons */
@@ -96,19 +95,22 @@ body {
 .weather_city {
     margin: 0;
     padding-top: 1rem;
+    padding-bottom: 2rem;
     font-size: 4rem;
     font-weight: 700;
 }
 
 .weather_img {
-    max-width: 90%;
-    transition: opacity 0.5s, translate 1s;
+    max-width: 25rem;
+    transition: opacity 1s, translate 1s;
 }
 
 .weather_degrees {
     margin: 0;
     font-size: 8rem;
     font-weight: 400;
+    height: 100%;
+    transition: opacity 1s;
 }
 
 .advise {
@@ -131,7 +133,12 @@ body {
 
     .weather_img {
         opacity: 0;
-        translate: -1rem 1rem;
+        translate: 0 1rem;
+    }
+
+    .weather_degrees {
+        opacity: 0;
+        translate: 0 1rem;
     }
 
     .advise {
