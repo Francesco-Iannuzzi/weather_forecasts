@@ -90,6 +90,7 @@ body {
 
 .weather>.panel {
     padding: 0;
+    height: 40rem;
 }
 
 .weather_city {
@@ -109,12 +110,7 @@ body {
     margin: 0;
     font-size: 6rem;
     font-weight: 400;
-    height: 100%;
     transition: opacity 1s;
-}
-
-.weather_degrees::after {
-    content: '°';
 }
 
 .advise {
