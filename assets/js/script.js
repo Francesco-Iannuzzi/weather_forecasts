@@ -4,6 +4,7 @@ const weatherCityElement = document.querySelector('.weather_city');
 const weatherImagesElement = document.querySelector('.weather_img');
 const weatherDegreesElement = document.querySelector('.weather_degrees');
 const adviceTextElement = document.querySelector('.advise_text');
+const advicePanelElement = document.querySelector('.advise > .panel');
 
 
 // recover latitude and longitude
@@ -19,6 +20,7 @@ function onError() {
     weatherDegreesElement.innerText = '';
     weatherImagesElement.alt = 'Geolocation disabled image';
     adviceTextElement.innerText = 'Please active Geolocation';
+    advicePanelElement.classList.add('bg-danger');
 
     // js_loading stop
     bodyElement.classList.remove('js_loading');
