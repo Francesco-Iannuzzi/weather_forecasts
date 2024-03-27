@@ -65,7 +65,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .title {
@@ -95,7 +95,7 @@ body {
 
 .weather_city {
     margin: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-size: 4rem;
     font-weight: 700;
 }
@@ -107,7 +107,7 @@ body {
 
 .weather_degrees {
     margin: 0;
-    font-size: 10rem;
+    font-size: 8rem;
     font-weight: 400;
 }
 
