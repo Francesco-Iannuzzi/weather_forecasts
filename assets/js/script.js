@@ -47,7 +47,6 @@ function onSucces(position) {
         weatherImagesElement.src = `./assets/img/${jsonData.weather[0].icon}.png`;
         weatherDegreesElement.innerText = Math.floor(jsonData.main.temp);
         weatherImagesElement.alt = 'icon weather';
-        adviceTextElement.innerText = 'Please active Geolocation';
 
         // js_loading stop
         bodyElement.classList.remove('js_loading');
