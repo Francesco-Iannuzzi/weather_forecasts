@@ -1,0 +1,20 @@
+const advices = {
+    '01d': 'Remember sunscreen!',
+    '01n': 'Goodnight!',
+    '02d': 'Today the sun comes and goes...',
+    '02n': 'Beware of werewolves...',
+    '03d': 'Perfect light for taking photos!',
+    '03n': 'Sleep tight :)',
+    '04d': 'Such a gray sky :(',
+    '04n': `You can't even see the moon!`,
+    '09d': 'Take an umbrella',
+    '09n': 'Wrap up well!',
+    '10d': 'Take an umbrella',
+    '10n': 'Wrap up well!',
+    '11d': 'Watch out for lightning!',
+    '11n': 'The lightning lights up the night!',
+    '13d': 'Go out and make a snowman!',
+    '13n': 'Perfect night to snuggle under the duvet!',
+    '50d': 'Turn on your fog lights!',
+    '50n': 'Drive safely!'
+};
