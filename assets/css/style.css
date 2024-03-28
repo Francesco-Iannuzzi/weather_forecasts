@@ -103,7 +103,7 @@ body {
 
 .weather_img {
     max-width: 25rem;
-    transition: opacity 1s, translate 1s;
+    transition: opacity 4s, translate 4s;
 }
 
 .weather_degrees {
@@ -115,7 +115,7 @@ body {
 
 .advise {
     margin-bottom: 2rem;
-    transition: scale 1s;
+    transition: scale 2s;
 }
 
 .advise_text {
