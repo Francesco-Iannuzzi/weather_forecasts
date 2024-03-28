@@ -56,7 +56,12 @@ function onSucces(position) {
         weatherImagesElement.src = `./assets/img/${imagesCode}.png`;
         weatherDegreesElement.innerText = `${Math.floor(temperature)}°`;
         weatherImagesElement.alt = 'icon weather';
+
+        // invok getAdvices and show advice in DOM
         adviceTextElement.innerText = getAdvices(imagesCode);
+
+        // invok checkDayNight
+        checkDayNight(imagesCode);
 
 
         // js_loading stop
@@ -68,6 +73,24 @@ function onSucces(position) {
     // function to gave an advice
     function getAdvices(imagesCode) {
         return advices[imagesCode];
+    };
+
+    // function to check if it's day or night
+    function checkDayNight(imagesCode) {
+
+        // check if the imagesCode includes "n" (for the night) or "d" (for the day)
+        if (imagesCode.includes('n')) {
+
+            // add class night
+            bodyElement.classList.add('night');
+
+        } else if (imagesCode.includes('d')) {
+
+            // add class day
+            bodyElement.classList.add('day');
+
+        };
+
     }
 
     // invok getWeather function
